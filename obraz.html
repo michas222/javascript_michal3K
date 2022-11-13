@@ -1,0 +1,42 @@
+<html>
+     <head>
+        <script type="text/javascript">
+        function okno_zamknij_kaminski()
+          {
+            window.close()
+          }
+        </script>
+        <style>
+p{
+    font-size: 18px;
+	font-weight: 200;
+}
+        </style>
+      </head>
+<body>
+<h1> Michał Kamiński 3K </h1>
+<img src="obraz1.gif"/>
+<h2 style="text-decoration: underline;">Uwagi na temat JS:</h2>
+<p>  kiedy powstała? </i> <b>W 1995r.</p>
+<p>  dlaczego jest to język skryptowy?<b> ponieważ nie musi zostać skompilowany do kodu maszynowego aby było można zobaczyć efekty jego działania </b> </p>
+<p>  gdzie jest wykonywany JS (klient lub serwer)? <b> </b></p>
+<p>  dlaczego jest to bezpieczne narzędzie? <b> Ponieważ Java ma znacznie ograniczone uprawnienia dostępu do zasobów komputera, przy użyciu którego przeglądana jest dana strona, a wszelkie odwolania do funkcji i obiektów wykonywane są w trakcie wykonywania programu.</b></p><br>
+< input type=" button " name=" przycisk " value=" Nowa Strona " onclick="WinOpen('  ')" > - umożliwia nam otworzenie nowej strony w nowym oknie poprzez widniejący przycisk<br><br>
+
+<textarea cols=250 rows=15>
+window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200"); - funkcja otwierająca okno z danymi cechami 
+toolbar=no - wartość yes lub no (1 lub 0), pokazuje lub ukrywa standardowy pasek narzędzi
+directories=no - wartość yes lub no (1 lub 0), pokazuje lub ukrywa przyciski katalogów
+menubar=no - wartość yes lub no (1 lub 0), pokazuje lub ukrywa menu przeglądarki
+height=280 - wartość w pixelach, ustawia wysokość okna
+width=160 - wartość w pixelach, ustawia szerokość okna 
+top=200 - wartość w pixelach, ustawia położenie okna względem góry ekranu
+left=200 - wartość w pixelach, ustawia położenie okna względem lewej strony ekranu
+
+</textarea>
+
+
+	
+<input type="button" value="zamknij okno" onclick="okno_zamknij_kaminski()"/>
+</body>
+</html>
