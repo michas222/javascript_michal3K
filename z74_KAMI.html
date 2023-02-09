@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        let l1_t_kam = parseFloat(prompt("Podaj pierwsza liczbe:"));
+        let l2_t_kam = parseFloat(prompt("Podaj druga liczbe:"));
+        let pocz_kam; //wartość początkowa
+        if(l1_t_kam >= 20 && l1_t_kam <=60){
+            if(l2_t_kam >= 20 && l2_t_kam <=60){
+                pocz_kam = parseInt(prompt("Podaj wartosc poczatkowa:"));
+                if(l1_t_kam>l2_t_kam){
+                    for(i=wp;i<=100;i=i+5)
+                    document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+" Michał Kamiński "+"<br></p>");
+                }
+                else{
+                    for(i=pocz_kam;i>0;i=i-5)
+                    document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+" Michał Kamiński"+"<br></p>");
+                }
+            }
+            else{
+                document.write(`Liczba ${l2_t_kam} nie miesci się w przedziale <20;60>`);
+            } 
+        }
+        else{
+            document.write(`Liczba ${l1_t_kam} nie miesci się w przedziale <20;60>`);
+        }
+    </script>
+</body>
+</html>
