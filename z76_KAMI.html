@@ -1,0 +1,17 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    
+    <script>
+        function pierwiastek_cztery(value, degree) {
+            return Math.pow(value, 1.0 / degree);
+        }
+        document.write("Liczby pierwsze"+"<br>");
+        for(let i=2; i<=13+15;i++){
+            document.write(`I=${i}`+"&nbsp"+`pierwiastek2(${i})=`+ Math.sqrt(i).toFixed(2)+"&nbsp&nbsp&nbsp&nbsp"+`pierwiastek4(${i})=`+pierwiastek_cztery(i,4).toFixed(2)+"<br>");
+        }
+    </script>
+</body>
+</html>
